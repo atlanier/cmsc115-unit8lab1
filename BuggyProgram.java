@@ -24,11 +24,10 @@ public class BuggyProgram {
         return sum;
     }
 
-    // Method 3: loop with bounds (no array)
     public static int sumRange(int start, int end) {
         int sum = 0;
 
-        for (int i = start; i <= end; i++) {
+        for (int i = start; i < end; i++) {
             sum += i;
         }
 
